@@ -1,9 +1,29 @@
+/* CSS reset mayer */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+}
+
 /*
 Theme Name: KenzieFlix
 Author: Kenzie Academy
 Author URI: kenzie.com.br;
 Version: 1.0
- 
 --------------------------------------------
 SUGESTÃO DE ESTRUTURAÇÃO BASE 
 --------------------------------------------
@@ -15,24 +35,75 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
-:root{
-  
-}
 
 /*BODY*/
-	body{
+body{
+background-color: #00002e;
+font-family: Arial, Helvetica, sans-serif;
 
-	}
+}
 
 /*TOPO*/
-	header.topo{
-		
-	}
-
-/*RODAPÉ*/
-	
-
+header.topo{
+text-align: center; 
+}
+header figcaption{
+color: #00002e;
+}
+.titulo h2{
+font-size: 45px;
+color: aliceblue;
+text-align: center;
+}
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
-	}
+h3{color: #00002e;}
+::marker {color: #00002e;}
+
+div.pg-home{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-wrap:wrap; 
+}
+
+.usuarios{
+display: flex; 
+
+}
+.usuarios img{
+width: 186px;
+margin: 30px;
+border: 1px solid #00002e; 
+}
+.usuarios img:hover{
+background-color:#00002e;
+border:#00002e;
+}
+.usuarios figcaption{
+font-size: 20px;
+color: beige;
+text-align: center;
+}
+/*RODAPÉ*/
+
+footer{
+text-align: center;
+}
+footer button{
+	border: 1px solid white;
+	background-color: #00002e;
+	color: white;
+    margin-left: 0px;
+    padding: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width:320px){
+
+.usuarios{
+display: flex;
+flex-wrap:wrap;} 
+
+}
